@@ -3,9 +3,12 @@ const socket = require('socket.io');
 
 let shoppingArray = [];
 
+
 //app setup
 const app = express();
-const server = app.listen(4000, () => console.log('Sever running on port 4000'));
+const server = app.listen(process.env.PORT || 3000, () => {
+    console.log("server listening");
+  });
 
 //static files
 app.use(express.static('public'));
