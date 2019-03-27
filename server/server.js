@@ -2,10 +2,15 @@ const express = require('express');
 const socket = require('socket.io');
 
 let shoppingArray = [];
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
 
 //app setup
 const app = express();
-const server = app.listen(4000, () => console.log('Sever running on port 4000'));
+const server = app.listen(port, () => console.log('Sever running on port '+port));
 
 //static files
 app.use(express.static('public'));
