@@ -1,4 +1,8 @@
-SHOPPING LIST (https://shopping-list-socket.herokuapp.com/)
+SHOPPING LIST (run the app in https://shopping-list-socket.herokuapp.com/)
+
+This project was built with a socket io. 
+This way, it is possible to do your groceries with other familly members in real time.
+There is no database in this particular project, this means if you close the app the shopping list will not be in memory.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
